@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="La tienda online de venta de indumentaria deportiva más grande y más actualizada del país">
+    <meta name="keywords" content="ZAPATILLAS, ZAPATILLAS HOMBRE, ZAPATILLAS MUJER, ZAPATILLAS NIKE, ZAPATILLAS NEW BALANCE, SNICKERS">
+    <!--bootstrap --> 
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <!--Hoja de Estilos de manera externa-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--Animate CSS-->
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--icono marca-->
+    <link rel="shortcut icon" href="./assets/icons/logo-favicon_Mesa de trabajo 1.svg" type="image/x-icon">
+    <title>Kickstreets-Home</title>
+</head>
+
+<body>
+
+    <!--HTML SEMÁNTICO-->
+<!--Mi barra de navegacion en cabecera con Flexbox
+<header>
+    <div class="logo">
+       <a href="#">Inicio</a>
+    </div>
+   
+    <nav>
+       <ul class="nav__list">
+            <li class="list__linkst">
+                <a href="./pages/promociones.html">Promociones</a>
+            </li>
+            <li class="list__links">
+                <a href="./pages/mujer.html">Mujer</a>
+            </li>
+            <li class="list__links">
+                <a href="./pages/hombre.html">Hombre</a>
+            </li> 
+       </ul>   
+    </nav>
+   
+       <button class="btn">
+           <a href="./pages/contacto.html">Contacto</a>
+       </button>
+   
+   </header>
+-->
+
+<!--Barra de navegacion con bootstrap-->
+<nav class="navbar navbar-expand-lg bg-info p-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/mujer.html">Mujer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/hombre.html">Hombre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Promociones
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./pages/promociones.html">Zapatillas</a></li>
+              <li><a class="dropdown-item" href="./pages/promociones.html">Remeras</a></li>
+              <li><a class="dropdown-item" href="./pages/promociones.html">Gorras</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--Sliders con Bootstrap-->
+  <div class="container mt-4">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/img/products/gorras.jpg" class="d-block w-100" alt="gorras">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/products/run.jpg" class="d-block w-100" alt="corriendo">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/products/zapas.jpg" class="d-block w-100" alt="zapas">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!--Contenedores Bootstrap
+<div class="container border border-3 border-danger mt-3">
+    <h2 class="display-4 text-center">Bienvenidos al sitio oficial de Kickstreets</h2>
+    <p class="lead text-center" >Aquí encontrarás lo último y lo mejor en productos deportivos</p>
+</div>
+-->
+
+
+<!--Sistema de Grillas en Bootstrap
+<div class="container text-center mt-3 mb-6">
+    <div class="row">
+      <div class="col col-md-12 col-lg-4 bg-primary">
+        Column
+      </div>
+      <div class="col col-md-12 col-lg-4 bg-secondary">
+        Column
+      </div>
+      <div class="col col-md-12 col-lg-4 bg-success">
+        Column
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-md-12 col-lg-6 bg-danger">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sapiente dolore! Neque, mollitia eveniet. Fugiat sed odio deleniti at eum.
+        </div>
+        <div class="col col-md-12 col-lg-6 bg-light">
+          <img class="img-fluid" src="./assets/img/mujer/lohacemosjuntas.jpg" alt="lohacemosjuntas">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, eum!</p>
+        </div>
+      </div>
+
+  </div>
+  -->
+
+
+<!--Acá va el contenido más importante de esta página web-->
+<!--Manejo de imágenes-->
+
+<div class="container mt-5 mb-5">
+  <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="assets/img/airjordan_Mesa de trabajo 1-05.jpg" alt="airjordan"> 
+              <div class="card-body">
+              <h5>Air Jordan</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, quae.</p>
+              <a href="https://www.grid.com.ar/calzado/zapatillas/hombre?initialMap=genero&map=category-1,category-2,genero&order=OrderByReleaseDateDESC" target="_blank">
+              <button class="boton">Comprar</button>
+              </a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="assets/img/NikeMalvestida_Mesa de trabajo 1-05.jpg" alt="campeonato-tenis">
+              <div class="card-body">
+              <h5>Nike Alexander</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, quae.</p>
+              <a href="https://www.dexter.com.ar/zapatillas" target="_blank">
+              <button class="boton">Comprar</button>
+              </a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="assets/img/NikeAlexander_Mesa de trabajo 1-04.jpg" alt="malvestida-nike">
+              <div class="card-body">
+              <h5>Malvestida Nike</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, quae.</p>
+              <a href="https://www.megasports.com.ar/Hombre?PS=12&map=c,specificationFilter_19&O=OrderByTopSaleDESC" target="_blank">
+              <button class="boton">Comprar</button>
+              </a>
+              </div>
+          </div>
+      </div>
+  
+  </div>
+  </div>
+
+
+<!--en este sector voy a poner un video y dos banners-->
+<section class="video-homenaje">
+    <!--Tipografia Bootstrap-->
+    <p class="h3">Les presentamos el video commemorativo por los 50 años de la fundación de Nike</p>
+    <video poster="./assets/video/poster50años01.jpg" src="./assets/video/Nike 50 Años.mp4" controls></video>
+
+    <!--audio-->
+    <audio src="./assets/audio/Pray - Anno Domini Beats.mp3" controls autoplay></audio>
+</section>
+
+
+<!--Formulario Bootstrap-->
+<div class="container mt-3 mb-3">
+  <h3>Decínos Hola</h3>
+  <form class="row g-3" >
+     
+    <div class="col-6">
+          <label for="correo-electronico" class="form-label">Email: </label>
+          <input class="form-control" type="email" id="correo-electronico" placeholder="usuario@servidor.com" required>
+    </div>
+
+    <div class="col-6">
+          <label for="pass" class="form-label">Contraseña: </label>
+          <input class="form-control" type="password" id="pass" placeholder="ingrese su contraseña">
+    </div>
+
+    <div class="col-12">
+      <label for="direccion01" class="form-label">Dirección: </label>
+      <input class="form-control" type="text" id="direccion01" placeholder="Dirección">
+    </div>
+
+    <div class="col-12">
+      <label for="direccion02" class="form-label">Dirección 2: </label>
+      <input class="form-control" type="text" id="direccion02" disabled>
+    </div>
+
+    <div class="col-6">
+      <label for="ciudad" class="form-label">Ciudad: </label>
+      <input class="form-control" type="text" id="ciudad" placeholder="Ciudad">
+    </div>
+
+    <div class="col-3">
+      <label for="codigo-postal" class="form-label">Código Postal: </label>
+      <input class="form-control" type="text" id="codigo-postal" placeholder="Código Postal">
+    </div>
+
+    <div class="col-3">
+      <label for="pais" class="form-label">País: </label>
+      <input class="form-control" type="text" id="pais" placeholder="pais" required>
+    </div>
+
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="terminos">
+        <label for="terminos" class="form-check-label">Acepto los términos</label>
+      </div>
+    </div>
+
+    <div>
+      <button type="submit" class="btn btn-success">
+          Enviar
+      </button>
+    </div>
+
+  </form>
+</div>
+
+
+
+<!--Pié de página mi página web-->
+<footer id="footer" >
+    <article>
+        <h4 class="camada41165 animate__animated animate__backInLeft" >Desarrollado por la camada DW 41165</h4>
+    </article>
+
+    <article class="redessociales">
+        <!--Iconos de redes-->
+        <!--Iconos de redes-->
+        <!--Iconos de redes-->
+    </article>
+</footer>
+
+
+<script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
